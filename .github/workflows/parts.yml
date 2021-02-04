@@ -37,8 +37,8 @@ jobs:
       - name: Azure WebApp
         uses: Azure/webapps-deploy@v2
         with:
-          app-name: parts-girish
-          publish-profile: ${{ secrets.APPSERVICE_PUBLISHPROFILE }}
+          app-name: parts-girishshet
+          publish-profile: ${{ secrets.AZUREWEBAPP }}
      
 
    
