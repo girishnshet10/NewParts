@@ -5,7 +5,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     paths-ignore:
-    - 'PartsUnlimited-aspnet45/ignore.txt'
+    - 'Partsunlimited/.github/workflows/parts.yml'
 
     branches: [ master ]
   pull_request:
