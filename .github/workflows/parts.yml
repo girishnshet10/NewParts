@@ -2,11 +2,8 @@ name: CI for partsunlimited
 
 # Controls when the action will run. 
 on:
- 
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    
-
     branches: [ master ]
   pull_request:
     branches: [ master ]
@@ -42,6 +39,3 @@ jobs:
         with:
           app-name: parts-girishshet
           publish-profile: ${{ secrets.AZUREWEBAPP }}
-     
-
-   
