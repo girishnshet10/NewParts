@@ -37,8 +37,18 @@ jobs:
     # A file, directory or wildcard pattern that describes what to upload
           path: ${{github.workspace}}
     # The desired behavior if no files are found using the provided path.
-
-      
+  deploy:
+      runs-on: self-hosted
+      steps:
+        - name: Download a Build Artifact
+          uses: actions/download-artifact@v2.0.10
+          with:
+    # Artifact name
+            name:  drop
+    # Destination path
+            path: ${{github.workspace}}
+        
+        
       
 
  
