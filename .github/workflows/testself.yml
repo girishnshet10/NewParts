@@ -38,15 +38,16 @@ jobs:
           path: ${{github.workspace}}
     # The desired behavior if no files are found using the provided path.
   deploy:
-      runs-on: self-hosted
-      steps:
-        - name: Download a Build Artifact
-          uses: actions/download-artifact@v2.0.10
-          with:
+    needs: build
+    runs-on: 'tfsrunner'
+    steps:
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v2.0.10
+        with:
     # Artifact name
-            name:  drop
+          name:  drop
     # Destination path
-            path: ${{github.workspace}}
+          path: ${{github.workspace}}
         
         
       
