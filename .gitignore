@@ -8,7 +8,7 @@
 *.sln.docstates
 #html
 *.html
-*.txt
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
